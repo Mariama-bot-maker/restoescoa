@@ -484,7 +484,7 @@ if (isset($_POST['add_to_cart'])) {
         <li class="nav-item">
           <a class="nav-link" href="panier.php">
             <i class="fas fa-shopping-cart"></i> Voir panier
-            <span class="cart-count"><?php echo count($_SESSION['cart'] ?? []); ?></span>
+            <span class="cart-count"><?php echo count($_SESSION['cart'] ?: []); ?></span>
           </a>
         </li>
         <li class="nav-item">
@@ -500,7 +500,7 @@ if (isset($_POST['add_to_cart'])) {
     <a href="panier.php" class="cart-btn">
       <i class="fas fa-shopping-cart"></i>
       Panier
-      <span class="cart-count"><?php echo count($_SESSION['cart'] ?? []); ?></span>
+      <span class="cart-count"><?php echo count($_SESSION['cart'] ?: []); ?></span>
     </a>
   </div>
 
